@@ -5,7 +5,7 @@ export default class App {
 
     setupEventListeners() {
         document.querySelector(".register-btn").addEventListener("click", this.signUp.bind(this));
-        console.log("👍");
+        //console.log("👍");
     } 
 
     signUp(){
