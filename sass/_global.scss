@@ -28,6 +28,8 @@
 
     input::placeholder {
         color: colors.$primary;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
     }
 
     .input-field {
