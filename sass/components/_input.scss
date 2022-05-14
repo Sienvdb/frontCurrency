@@ -1,0 +1,34 @@
+@use "../colors";
+@use "../fonts";
+
+    input::placeholder {
+        color: colors.$primary;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
+    }
+
+    input {
+        color: colors.$primary;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
+    }
+
+    .input__field {
+        background-color: colors.$input;
+        padding: 16px;
+        border-radius: 8px;
+        border: solid 2px colors.$input;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        width: 90%;
+        color: colors.$primary;
+    }
+
+    .input__field:focus{
+        background-color: white;
+        color: black;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
+    }

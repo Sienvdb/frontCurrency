@@ -4,13 +4,8 @@
         box-sizing: border-box;
     }
 
-    .logo {
-        width: 20em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    body {
+        font-family: fonts.$poppins-medium;
     }
 
     .title {
@@ -26,18 +21,19 @@
         margin-bottom: 20px;
     }
 
-    input::placeholder {
-        color: colors.$primary;
+
+
+    .account {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .input-field {
-        background-color: colors.$input;
-        padding: 20px;
-        border-radius: 8px;
-        border: solid 2px colors.$input;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
-        width: 90%;
+    .message {
+        color: colors.$message;
+    }
+
+    .link {
         color: colors.$primary;
+        padding-left: 10px;
     }
