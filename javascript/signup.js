@@ -1,6 +1,5 @@
 document.querySelector("#register-btn").addEventListener("click", e => {
-
-    console.log("❤");
+    //console.log("❤");
     let firstname = document.querySelector("#firstname").value;
     let lastname = document.querySelector("#lastname").value;
     let username = document.querySelector("#username").value;
