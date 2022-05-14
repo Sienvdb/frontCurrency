@@ -20,6 +20,7 @@ document.querySelector("#login-btn").addEventListener("click", e => {
     }).then(json => {
         if(json.status === "success") {
             console.log("👍👌👌");
+            window.location.href = "index.html";
         } else {
             console.log("😒😒");
         }
