@@ -8,9 +8,13 @@
         font-family: fonts.$poppins-medium;
     }
 
-    .title {
+    .header {
+        display: flex;
+    }
+
+    .title__firstword {
         margin-left: 30px;
-        margin-right: 30px;
+        margin-right: 8px;
         background-color: colors.$highlight;
     }
 
