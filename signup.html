@@ -7,34 +7,40 @@
     <title>Currency app</title>
   </head>
   <body>
-      <img src="./assets/logo.png" alt="IMD-currency logo" class="logo">
-        <h2 class="title">Register now!</h2>
+        <img src="./assets/logo.png" alt="IMD-currency logo" class="logo">
+        <div class="header">
+            <h2 class="title">Register now!</h2>
+        </div>
+        
 
         <form action="" method="post">
-            <div>
-                <label for="Firstname">Firstname</label>
-                <input type="text" placeholder="Firstname" name="firstname" id="firstname">
+            <div class="register-form">
+                <div>
+                    <label for="Firstname">Firstname</label>
+                    <input type="text" placeholder="Firstname" name="firstname" id="firstname" class="input-field">
+                </div>
+                <div>
+                    <label for="Lastname">Lastname</label>
+                    <input type="text" placeholder="Lastname" name="lastname" id="lastname" class="input-field">
+                </div>
+                <div>
+                    <label for="Username">Username</label>
+                    <input type="text" placeholder="Username" name="username" id="username" class="input-field">
+                </div>
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="text" placeholder="Email" name="email" id="email" class="input-field">
+                </div>
+                <div>
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Password" name="password" id="password" class="input-field">
+                </div>
+        
+                <div>
+                    <button class="register-btn">Register</button>
+                </div>
             </div>
-            <div>
-                <label for="Lastname">Lastname</label>
-                <input type="text" placeholder="Lastname" name="lastname" id="lastname">
-            </div>
-            <div>
-                <label for="Username">Username</label>
-                <input type="text" placeholder="Username" name="username" id="username">
-            </div>
-            <div>
-                <label for="Email">Email</label>
-                <input type="text" placeholder="Email" name="email" id="email">
-            </div>
-            <div>
-                <label for="Password">Password</label>
-                <input type="password" placeholder="Password" name="password" id="password">
-            </div>
-    
-            <div>
-                <button class="register-btn">Register</button>
-            </div>
+            
         </form>
 
         

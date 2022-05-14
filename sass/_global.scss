@@ -4,15 +4,40 @@
         box-sizing: border-box;
     }
 
-    body {
-        
-    }
-
     .logo {
         width: 20em;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .title {
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: colors.$highlight;
+    }
+
+    .register-form {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    input::placeholder {
+        color: colors.$primary;
+    }
+
+    .input-field {
+        background-color: colors.$input;
+        padding: 20px;
+        border-radius: 8px;
+        border: solid 2px colors.$input;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 90%;
+        color: colors.$primary;
     }
