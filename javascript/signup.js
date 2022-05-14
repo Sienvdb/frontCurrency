@@ -34,22 +34,32 @@ document.querySelector("#register-btn").addEventListener("click", e => {
 
             if(firstname == "") {
                 document.querySelector("#firstname").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#firstname").classList.replace("input__field__error", "input__field");
             }
 
             if(lastname == "") {
                 document.querySelector("#lastname").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#lastname").classList.replace("input__field__error", "input__field");
             }
 
             if(username == "") {
                 document.querySelector("#username").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#username").classList.replace("input__field__error", "input__field");
             }
 
-            if(email == "") {
+            if(email == "" || json.message == "Email must contain @student.thomasmore.be") {
                 document.querySelector("#email").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#email").classList.replace("input__field__error", "input__field");
             }
 
             if(password == "") {
                 document.querySelector("#password").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#password").classList.replace("input__field__error", "input__field");
             }
         }
     })
