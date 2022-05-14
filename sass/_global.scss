@@ -1,16 +1,18 @@
-* {
-    box-sizing: border-box;
-}
+@use "colors";
+@use "fonts";
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    body {
+        
+    }
 
-.logo {
-    width: 20em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    .logo {
+        width: 20em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
