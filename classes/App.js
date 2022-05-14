@@ -43,7 +43,7 @@ export default class App {
             }
         })
 
-        e.preventDefault();
+        
         
     }
 }
