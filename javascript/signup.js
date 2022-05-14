@@ -23,14 +23,34 @@ document.querySelector("#register-btn").addEventListener("click", e => {
         return response.json();
     }).then(json => {
         if(json.status === "success") {
-            console.log("👍");
+            //console.log("👍");
             window.location.href = "index.html";
             
         } if(json.status === "error") {
-            console.log(json.message);
+            //console.log(json.message);
             let error = document.querySelector(".error");
             error.innerHTML = json.message;
             error.classList.remove("hidden");
+
+            if(firstname == "") {
+                document.querySelector("#firstname").classList.replace("input__field", "input__field__error");
+            }
+
+            if(lastname == "") {
+                document.querySelector("#lastname").classList.replace("input__field", "input__field__error");
+            }
+
+            if(username == "") {
+                document.querySelector("#username").classList.replace("input__field", "input__field__error");
+            }
+
+            if(email == "") {
+                document.querySelector("#email").classList.replace("input__field", "input__field__error");
+            }
+
+            if(password == "") {
+                document.querySelector("#password").classList.replace("input__field", "input__field__error");
+            }
         }
     })
     e.preventDefault();
