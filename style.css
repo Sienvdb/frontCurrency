@@ -6,3 +6,16 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.hidden
+{
+  display:none;
+}
+
+.alert
+{
+  background-color: #B4C4E7;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  color: #32549d;
+}
