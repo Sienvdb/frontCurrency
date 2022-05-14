@@ -26,8 +26,11 @@ document.querySelector("#register-btn").addEventListener("click", e => {
             console.log("👍");
             window.location.href = "index.html";
             
-        } else {
-            console.log("👎");
+        } if(json.status === "error") {
+            console.log(json.message);
+            let error = document.querySelector(".error");
+            error.innerHTML = json.message;
+            error.classList.remove("hidden");
         }
     })
     e.preventDefault();
