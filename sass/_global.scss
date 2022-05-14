@@ -4,6 +4,10 @@
         box-sizing: border-box;
     }
 
+    body {
+        font-family: fonts.$poppins-medium;
+    }
+
     .title {
         margin-left: 30px;
         margin-right: 30px;

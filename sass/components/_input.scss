@@ -7,7 +7,13 @@
         font-size: 15px;
     }
 
-    .input-field {
+    input {
+        color: colors.$primary;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
+    }
+
+    .input__field {
         background-color: colors.$input;
         padding: 20px;
         border-radius: 8px;
@@ -17,4 +23,11 @@
         margin-bottom: 10px;
         width: 90%;
         color: colors.$primary;
+    }
+
+    .input__field:focus{
+        background-color: white;
+        color: black;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
     }
