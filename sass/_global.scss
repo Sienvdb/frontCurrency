@@ -12,6 +12,17 @@
         display: flex;
     }
 
+    .hidden {
+        display: none;
+    }
+
+    .error {
+        background-color: colors.$danger;
+        width: 90%;
+        padding: 16px;
+        border-radius: 8px;
+    }
+
     .title__firstword {
         margin-left: 30px;
         margin-right: 8px;

@@ -1,6 +1,5 @@
 document.querySelector("#register-btn").addEventListener("click", e => {
-
-    console.log("❤");
+    //console.log("❤");
     let firstname = document.querySelector("#firstname").value;
     let lastname = document.querySelector("#lastname").value;
     let username = document.querySelector("#username").value;
@@ -23,11 +22,44 @@ document.querySelector("#register-btn").addEventListener("click", e => {
         return response.json();
     }).then(json => {
         if(json.status === "success") {
-            console.log("👍");
+            //console.log("👍");
             window.location.href = "index.html";
             
-        } else {
-            console.log("👎");
+        } if(json.status === "error") {
+            //console.log(json.message);
+            let error = document.querySelector(".error");
+            error.innerHTML = json.message;
+            error.classList.remove("hidden");
+
+            if(firstname == "") {
+                document.querySelector("#firstname").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#firstname").classList.replace("input__field__error", "input__field");
+            }
+
+            if(lastname == "") {
+                document.querySelector("#lastname").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#lastname").classList.replace("input__field__error", "input__field");
+            }
+
+            if(username == "") {
+                document.querySelector("#username").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#username").classList.replace("input__field__error", "input__field");
+            }
+
+            if(email == "" || json.message == "Email must contain @student.thomasmore.be") {
+                document.querySelector("#email").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#email").classList.replace("input__field__error", "input__field");
+            }
+
+            if(password == "") {
+                document.querySelector("#password").classList.replace("input__field", "input__field__error");
+            } else {
+                document.querySelector("#password").classList.replace("input__field__error", "input__field");
+            }
         }
     })
     e.preventDefault();
