@@ -1,0 +1,20 @@
+@use "../colors";
+@use "../fonts";
+
+    input::placeholder {
+        color: colors.$primary;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
+    }
+
+    .input-field {
+        background-color: colors.$input;
+        padding: 20px;
+        border-radius: 8px;
+        border: solid 2px colors.$input;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 90%;
+        color: colors.$primary;
+    }
