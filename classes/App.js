@@ -10,8 +10,16 @@ export default class App {
 
     signUp(e){
         console.log("❤");
+        let firstname = document.querySelector("#firstname").value;
+        let lastname = document.querySelector("#lastname").value;
         let username = document.querySelector("#username").value;
+        let email = document.querySelector("#email").value;
+        let password = document.querySelector("#password").value;
+        console.log(firstname);
+        console.log(lastname);
         console.log(username);
+        console.log(email);
+        console.log(password);
         e.preventDefault();
         
     }
