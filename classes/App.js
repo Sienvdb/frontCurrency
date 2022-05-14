@@ -5,13 +5,14 @@ export default class App {
 
     setupEventListeners() {
         document.querySelector(".register-btn").addEventListener("click", this.signUp.bind(this));
-        //console.log("👍");
+        console.log("👍");
     } 
 
-    signUp(){
+    signUp(e){
         console.log("❤");
         let username = document.querySelector("#username").value;
         console.log(username);
+        e.preventDefault();
         
     }
 }
