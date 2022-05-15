@@ -6,3 +6,16 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+@media (min-width: 50em) {
+    .header__logo {
+        background-color: white;
+        margin-left: 200px;
+        margin-right: 200px;
+        
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+}

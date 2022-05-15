@@ -56,3 +56,30 @@
         padding-left: 10px;
     }
 
+    @media (min-width: 50em) {
+        body {
+            background-color: colors.$primary;
+        }
+
+        .header {
+            background-color: white;
+            margin-left: 50px;
+            margin-right: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register-form {
+            background-color: white;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .error {
+            margin-left: 50px;
+            margin-right: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+

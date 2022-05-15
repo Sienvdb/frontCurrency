@@ -47,7 +47,6 @@
     }
 
     #password {
-        background-color: colors.$input;
         background-image: url("../../assets/oog.svg");
         background-repeat: no-repeat;
         background-position: 96%;
@@ -56,6 +55,21 @@
 
     @media (min-width: 50em) {
         .input__field {
-            width: 100%;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input__label{
+            display: flex;
+            justify-content: center;
+            height: 30px;
+            margin-top: 10px;
+        }
+
+        .input__field__error {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }

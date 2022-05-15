@@ -7,16 +7,19 @@
     <title>Currency app</title>
   </head>
   <body>
+      <div class="header__logo">
         <img src="./assets/logo.png" alt="IMD-currency logo" class="logo">
         <div class="header">
             <h2 class="title__firstword">Register</h2>
             <h2 class="title">now!</h2>
         </div>
+      </div>
+
         
 
         <form action="" method="post">
             <div class="register-form">
-                <div>
+                <div class="input__div">
                     <label for="Firstname" class="input__label">Firstname</label>
                     <input type="text" placeholder="Enter Firstname" name="firstname" id="firstname" class="input__field"  autocomplete="off">
                 </div>
@@ -37,11 +40,12 @@
                     <input type="password" placeholder="Password" name="password" id="password" class="input__field"  autocomplete="off">
                 </div>
 
-                <p class="error hidden"></p>
-        
-                <div>
+                <p class="error hidden"></p>        
+
+                <div class="center">
                     <button id="register-btn" class="btn">Register</button>
                 </div>
+
                 <div class="account">
                     <p class="message">Already have an account?</p>                    
                     <a href="login.html">
