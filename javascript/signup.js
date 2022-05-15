@@ -23,6 +23,9 @@ document.querySelector("#register-btn").addEventListener("click", e => {
     }).then(json => {
         if(json.status === "success") {
             //console.log("👍");
+            let token = json.data.token;
+            localStorage.setItem("token", token);
+
             window.location.href = "index.html";
             
         } if(json.status === "error") {
