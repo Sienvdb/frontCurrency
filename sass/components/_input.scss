@@ -62,8 +62,10 @@
         }
 
         .input__label{
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            height: 30px;
+            margin-top: 10px;
         }
 
         .input__field__error {

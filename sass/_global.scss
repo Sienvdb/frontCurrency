@@ -61,14 +61,25 @@
             background-color: colors.$primary;
         }
 
-        .register-form {
+        .header {
             background-color: white;
             margin-left: 50px;
             margin-right: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register-form {
+            background-color: white;
+            margin-left: 200px;
+            margin-right: 200px;
         }
 
         .error {
-            width: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            justify-content: center;
+            align-items: center;
         }
     }
 
