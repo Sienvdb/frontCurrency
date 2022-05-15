@@ -56,3 +56,19 @@
         padding-left: 10px;
     }
 
+    @media (min-width: 50em) {
+        body {
+            background-color: colors.$primary;
+        }
+
+        .register-form {
+            background-color: white;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .error {
+            width: 100%;
+        }
+    }
+
