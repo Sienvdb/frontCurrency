@@ -13,3 +13,9 @@
         font-family: fonts.$poppins-medium;
         margin-top: 10px;
     }
+
+    @media (min-width: 50em) {
+        .btn {
+            width: 100%;
+        }
+    }
