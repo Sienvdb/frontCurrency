@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency app</title>
+  </head>
+  <body>
+    <form action="" method="POST">
+        <div class="header__logo">
+            <div class="title title__subpage">
+                <img src="./assets/back.png" alt="back" class="">
+                <h1 class="pageName">Transaction</h1>
+            </div>
+            <h3 class="subtitle"><span class="marked">Transfer</span> coins</h3>
+
+            <div>
+                <label for="Username" class="input__label">Username</label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" class="input__field"  autocomplete="off">
+            </div>
+
+            <div>
+                <label for="Amount" class="input__label">Amount</label>
+                <input type="number" placeholder="Enter Amount" name="amount" id="amount" class="input__field"  autocomplete="off">
+            </div>
+
+            <div>
+                <label for="Reason" class="input__label">Reason</label>
+                <select name="reason" id="reason" class="input__field">
+                    <option value="none">Enter Reason</option>
+                    <option value="development">Development help</option>
+                    <option value="design">Design help</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="deadline">Meeting deadlines</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Message" class="input__label">Message</label>
+                <input type="text" placeholder="Enter Message" name="message" id="message" class="input__field input__field--message"  autocomplete="off">
+            </div>
+            
+            <div class="center">
+                <button id="send-btn" class="btn">Send</button>
+            </div>
+
+        </div>
+
+    </form>
+    <script type="module" src="/main.js"></script>
+    <script src="./javascript/signup.js"></script>
+  </body>
+</html>
