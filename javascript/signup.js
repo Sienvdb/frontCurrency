@@ -21,8 +21,7 @@ document.querySelector("#register-btn").addEventListener("click", e => {
     }).then(response => {
         return response.json();
     }).then(json => {
-        if(json.status === "success") {
-            //console.log("👍");
+        if(json.status === "succes") {
             let token = json.data.token;
             localStorage.setItem("token", token);
 
@@ -67,9 +66,3 @@ document.querySelector("#register-btn").addEventListener("click", e => {
     })
     e.preventDefault();
 });
-
-
-
-
-    
-    
