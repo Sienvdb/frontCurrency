@@ -1,4 +1,4 @@
-.logo {
+.header__logo {
     width: 15em;
     display: block;
     margin-left: auto;
@@ -8,14 +8,14 @@
 }
 
 @media (min-width: 50em) {
-    .header__logo {
+    .header {
         background-color: white;
         margin-left: 200px;
         margin-right: 200px;
         
     }
 
-    .logo {
+    .header__logo {
         padding-top: 10px;
     }
 }

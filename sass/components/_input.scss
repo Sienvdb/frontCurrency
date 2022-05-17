@@ -7,17 +7,17 @@
         font-size: 15px;
     }
 
-    .input--label {
+    .form__label {
         color: colors.$primary;
         font-family: fonts.$poppins-medium;
         font-size: 15px;
     }
 
-    .input--label--register{
-        color: colors.$primary;      
+    .form__label--register {
+        color: colors.$primary;   
     }
 
-    .input__field {
+    .form__input {
         background-color: colors.$input;
         padding: 16px;
         border-radius: 8px;
@@ -29,7 +29,7 @@
         width: 90%;
     }
 
-    .input__field--register{
+    .form__input--register {
         color: colors.$primary;
         background-color: colors.$input;
     }
@@ -45,12 +45,12 @@
         width: 90%;
     }
 
-    .input__field__error--register{
+    .input__field__error--register {
         background-color: white;
         color: colors.$primary;
     }
 
-    .input__field:focus{
+    .form__input:focus {
         background-color: white;
         color: black;
         font-family: fonts.$poppins-medium;
@@ -65,17 +65,17 @@
     }
 
     @media (min-width: 50em) {
-        .input__field {
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .input__label{
+        .form__label {
             display: flex;
             justify-content: center;
             height: 30px;
             margin-top: 10px;
+        }
+
+        .form__input {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .input__field__error {
