@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency app</title>
-  </head>
-  <body>
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/back.png" alt="back" class="header__logo">
+        <div class="header__secondary">
+            <h2 class="header__firstword">Transfer</h2>
+            <h2 class="header__secondword">coins</h2>
+        </div>
+    </div>
+
     <form action="" method="POST">
-        <div class="header__logo">
-            <div class="title title__subpage">
-                <img src="./assets/back.png" alt="back" class="">
-                <h1 class="pageName">Transaction</h1>
-            </div>
-            <h3 class="subtitle"><span class="marked">Transfer</span> coins</h3>
-
-            <div>
-                <label for="Username" class="input__label">Username</label>
-                <input type="text" placeholder="Enter Username" name="username" id="username" class="input__field"  autocomplete="off">
+        <div class="form">
+            <div class="form__field">
+                <label for="Username" class="form__label">Username</label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" class="form__input" autocomplete="off">
             </div>
 
-            <div>
-                <label for="Amount" class="input__label">Amount</label>
-                <input type="number" placeholder="Enter Amount" name="amount" id="amount" class="input__field"  autocomplete="off">
+            <div class="form__field">
+                <label for="Amount" class="form__label">Amount</label>
+                <input type="number" placeholder="Enter Amount" name="amount" id="amount" class="form__input" autocomplete="off">
             </div>
 
-            <div>
-                <label for="Reason" class="input__label">Reason</label>
-                <select name="reason" id="reason" class="input__field">
+            <div class="form__field">
+                <label for="Reason" class="form__label">Reason</label>
+                <select name="reason" id="reason" class="form__input">
                     <option value="none">Enter Reason</option>
                     <option value="development">Development help</option>
                     <option value="design">Design help</option>
@@ -37,19 +39,18 @@
                 </select>
             </div>
 
-            <div>
-                <label for="Message" class="input__label">Message</label>
-                <input type="text" placeholder="Enter Message" name="message" id="message" class="input__field input__field--message"  autocomplete="off">
+            <div class="form__field">
+                <label for="Message" class="form__label">Message</label>
+                <input type="text" placeholder="Enter Message" name="message" id="message" class="form__input" autocomplete="off">
             </div>
-            
-            <div class="center">
-                <button id="makeTransfer-btn" class="btn">Send</button>
+                
+            <div class="btn">
+                <button id="makeTransfer-btn" class="btn__text">Send</button>
             </div>
-
         </div>
-
     </form>
+
     <script type="module" src="/main.js"></script>
     <script src="./javascript/transfer.js"></script>
-  </body>
+</body>
 </html>
