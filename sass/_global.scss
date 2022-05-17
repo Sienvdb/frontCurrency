@@ -52,8 +52,11 @@
     }
 
     .link {
-        color: colors.$primary;
         padding-left: 10px;
+    }
+
+    .link--bold{
+        color: colors.$primary;
     }
 
     @media (min-width: 50em) {
