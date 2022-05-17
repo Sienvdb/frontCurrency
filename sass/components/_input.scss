@@ -7,10 +7,14 @@
         font-size: 15px;
     }
 
-    input {
+    .input--label {
         color: colors.$primary;
         font-family: fonts.$poppins-medium;
         font-size: 15px;
+    }
+
+    .input--label--register{
+        color: colors.$primary;      
     }
 
     .input__field {
@@ -23,11 +27,14 @@
         margin-bottom: 10px;
         margin-top: 5px;
         width: 90%;
+    }
+
+    .input__field--register{
         color: colors.$primary;
+        background-color: colors.$input;
     }
 
     .input__field__error {
-        background-color: white;
         padding: 16px;
         border-radius: 8px;
         border: solid 2px colors.$danger;
@@ -36,6 +43,10 @@
         margin-bottom: 10px;
         margin-top: 5px;
         width: 90%;
+    }
+
+    .input__field__error--register{
+        background-color: white;
         color: colors.$primary;
     }
 
