@@ -6,7 +6,7 @@ document.querySelector("#register-btn").addEventListener("click", e => {
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
 
-    fetch('http://localhost:3001/api/v1/signup', {
+    fetch('https://currency-backend-mms.herokuapp.com/api/v1/signup', {
         method: "post",
         headers: {
             'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ document.querySelector("#register-btn").addEventListener("click", e => {
     }).then(response => {
         return response.json();
     }).then(json => {
-        if(json.status === "succes") {
+        if(json.status === "success") {
             let token = json.data.token;
             localStorage.setItem("token", token);
 
