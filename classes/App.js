@@ -4,6 +4,8 @@ export default class App {
     }
 
     getCoins() {
+        
+        //console.log(coins);
 
         fetch('https://currency-backend-mms.herokuapp.com/api/v1/getCoins', {
             method: "get",
@@ -15,7 +17,9 @@ export default class App {
             return response.json();
         }).then(json => {
             if(json.status === "success") {
-                console.log("👍👌👌");
+                //console.log("👍👌👌");
+                document.querySelector("#user-coins").innerHTML = json.data.coins;
+
                 
             } if(json.status === "error") {
                 console.log(json.message);
