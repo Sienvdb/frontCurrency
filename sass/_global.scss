@@ -29,6 +29,15 @@
         margin-right: 30px;
     }
 
+    .links {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .links__icon {
+        width: 5%;
+    }
+
     .form__error--hidden {
         display: none;
     }
