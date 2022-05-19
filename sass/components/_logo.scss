@@ -12,17 +12,11 @@
     height: 10%;
 }
 
-.header__logo--transfer {
-    width: 4%;
-    height: 4%;
-}
-
 @media (min-width: 50em) {
     .header {
         background-color: white;
         margin-left: 200px;
         margin-right: 200px;
-        
     }
 
     .header__logo {
