@@ -4,10 +4,15 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 4px 4px #CECECE;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center;
+        align-items: center;
     }
 
     .transfer__title {
         display: flex;
+        margin-left: 20px;
     }
 
     .title__firstword {
