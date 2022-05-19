@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency app</title>
   </head>
-  <body>
-    <p class="account__text account__text--balance">Current balance:</p>
-    <div class="header">      
+  <body>    
+    <div class="header">    
+      <p class="account__text account__text--balance">Current balance:</p>  
       <div class="header__secondary header__secondary--index">
           <img src="./assets/IMD-eye.png" alt="IMD-eye logo" class="header__logo--eye">
           <h2 class="header__firstword">100</h2>
@@ -34,7 +34,17 @@
       <h2 class="header__secondword--link">See all</h2>
     </div>
 
-    <a href="transfer.html">maak transfer</a>
+
+    <div class="transfer">
+      <div class="transfer__title">
+        <h3 class="title__firstword">Username</h3>
+        <h3 class="title__sent"> sent you </h3>
+        <h3 class="title__number">10</h3>
+        <h3 class="title__IMDcoins">IMD-coins!</h3>
+      </div>
+      
+    </div>
+
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
