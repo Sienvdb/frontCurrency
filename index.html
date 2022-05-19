@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency app</title>
   </head>
-  <body>
-    <p class="account__text account__text--balance">Current balance:</p>
-    <div class="header">      
+  <body>    
+    <div class="header">    
+      <p class="account__text account__text--balance">Current balance:</p>  
       <div class="header__secondary header__secondary--index">
           <img src="./assets/IMD-eye.png" alt="IMD-eye logo" class="header__logo--eye">
           <h2 class="header__firstword">100</h2>
@@ -17,9 +17,16 @@
     </div>
 
     <div class="links">
-      <img src="./assets/leaderboard-icon.svg" alt="Leaderboard icon" class="links__icon">
-      <img src="./assets/transfer-icon.svg" alt="Transfer icon" class="links__icon">
-      <img src="./assets/logout-icon.svg" alt="Logout icon" class="links__icon">
+      <a href="leaderboard.html" class="links__icon">
+        <img src="./assets/leaderboard-icon.svg" alt="Leaderboard icon">
+      </a>
+      <a href="transfer.html" class="links__icon">
+        <img src="./assets/transfer-icon.svg" alt="Transfer icon">
+      </a>      
+      <a href="logout.html" class="links__icon">
+        <img src="./assets/logout-icon.svg" alt="Logout icon">
+      </a>
+      
     </div>
 
     <div class="header__index">
@@ -27,7 +34,25 @@
       <h2 class="header__secondword--link">See all</h2>
     </div>
 
-    <a href="transfer.html">maak transfer</a>
+
+    <div class="transfer">
+      <div class="transfer__title">
+        <h4 class="title__firstword">Username</h4>
+        <h4 class="title__sent"> sent you </h4>
+        <h4 class="title__number">10</h4>
+        <h4 class="title__IMDcoins">IMD-coins!</h4>
+      </div>
+      
+      <div class="transfer__message">
+        <p>"Thank you bla bla bla"</p>
+      </div>
+
+      <div class="transfer__date">
+        <p class="date__date">19/05/2022</p>
+        <p class="date__time">11:13</p>
+      </div>
+    </div>
+
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
