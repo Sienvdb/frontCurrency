@@ -34,3 +34,14 @@
         font-size: 14px;
         margin-left: 20px;
     }
+
+    .transfer__date {
+        color: colors.$message;
+        font-size: 12px;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .date__date {
+        padding-right: 5px;
+    }
