@@ -16,6 +16,19 @@
         display: flex;
     }
 
+    .header__secondary--index {
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__index {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+
     .form__error--hidden {
         display: none;
     }
@@ -31,6 +44,10 @@
         margin-left: 30px;
         margin-right: 8px;
         background-color: colors.$highlight;
+    }
+
+    .header__secondword--link {
+        color: colors.$primary;
     }
 
     .form {
@@ -49,6 +66,13 @@
 
     .account__text {
         color: colors.$message;
+    }
+
+    .account__text--balance {
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center;
+        align-items: center;
     }
 
     .account_link {
