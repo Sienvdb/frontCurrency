@@ -35,6 +35,7 @@ export default class Transfer {
                                 </div>`;
                     let div = `<div class="transfer"> ${name + message + date}</div>`;
 
+                    document.querySelector("#tranfer__list").innerHTML = div;
                     document.querySelector("#tranfer__list").innerHTML += div;
                 });
 
