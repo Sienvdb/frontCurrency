@@ -31,9 +31,9 @@ document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
             window.location.href = "index.html";
         }if(json.status === "error") {
             //console.log(json.message);
-            let error = document.querySelector(".error");
+            let error = document.querySelector(".form__error");
             error.innerHTML = json.message;
-            error.classList.remove("hidden");
+            error.classList.remove("form__error--hidden");
         }
     })
 
