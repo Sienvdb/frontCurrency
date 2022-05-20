@@ -1,3 +1,5 @@
+import '../sass/app.scss';
+
 document.querySelector("#login-btn").addEventListener("click", e => {
 
     console.log("❤");
