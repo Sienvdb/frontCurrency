@@ -34,6 +34,9 @@ export default class App {
     }
 
     logout(e) {
-        console.log("✨");
+        /*console.log("✨");
+        let test = localStorage.getItem('token');
+        console.log(test);*/
+        window.localStorage.removeItem('token');
     }
 }
