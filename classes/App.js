@@ -1,6 +1,11 @@
 export default class App {
     constructor() {
         this.getCoins();
+        this.setupEventListeners();
+    }
+
+    setupEventListeners() {
+        document.querySelector("#logout").addEventListener("click", this.logout.bind(this));
     }
 
     getCoins() {
@@ -26,5 +31,13 @@ export default class App {
                 
             }
         })
+    }
+
+    logout(e) {
+        /*console.log("✨");
+        let test = localStorage.getItem('token');
+        console.log(test);*/
+        window.localStorage.removeItem('token');
+        window.location.href = "login.html";
     }
 }
