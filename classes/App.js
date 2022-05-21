@@ -38,5 +38,6 @@ export default class App {
         let test = localStorage.getItem('token');
         console.log(test);*/
         window.localStorage.removeItem('token');
+        window.location.href = "login.html";
     }
 }
