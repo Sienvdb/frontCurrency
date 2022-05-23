@@ -6,6 +6,21 @@ document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
     let amount = document.querySelector("#amount").value;
     let reason = document.querySelector("#reason").value;
     let message = document.querySelector("#message").value;
+    let tokenUser;
+    let tokenId;
+
+    fetch('http://localhost:3001/api/v1/token', {
+        method: "get",
+        headers: {
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + localStorage.getItem('token')
+        }
+    })
+  .then(response => {
+     return response.json()})
+  .then(data => {
+    tokenUser = data.data.username;
+    tokenId = data.data.uid;
 
     fetch('http://localhost:3001/api/v1/transfers', {
         method: "post",
@@ -14,8 +29,8 @@ document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
             "Authorization": "Bearer " + localStorage.getItem('token')
         },
         body : JSON.stringify({
-            "sender": "sien",
-            "senderId": 9,
+            "sender": tokenUser,
+            "senderId": tokenId,
             "receiver": receiver,
             "receiverId": 5,
             "coins": amount,
@@ -23,7 +38,6 @@ document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
             "message": message
         })
     }).then(response => { 
-        console.log("ok1")
         return response.json();
     }).then(json => {
         if(json.status === "success") {
@@ -36,6 +50,9 @@ document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
             error.classList.remove("form__error--hidden");
         }
     })
+
+});
+
 
     e.preventDefault();
 });
