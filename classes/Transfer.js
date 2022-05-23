@@ -39,7 +39,7 @@ export default class Transfer {
 
                     if(transfer[i].sender == tokenUser) {
                         let name = `<h4> 
-                                    You have send<span class="title__firstword--receiver">${transfer[i].receiver}</span>  
+                                    You have sent<span class="title__firstword--receiver">${transfer[i].receiver}</span>  
                                     <span class="title__number">${transfer[i].coins}</span> 
                                     IMD-coins!
                                 </h4>`;
@@ -50,6 +50,7 @@ export default class Transfer {
                         let div = `<div class="transfer"> ${name + message + datetime}</div>`;
 
                         document.querySelector("#tranfer__list").innerHTML += div;
+
                     } else if(transfer[i].sender != tokenUser) {
                         let name = `<h4> 
                                         <span class="title__firstword">${transfer[i].sender}</span>  
@@ -65,15 +66,8 @@ export default class Transfer {
 
                         document.querySelector("#tranfer__list").innerHTML += div;
                     }
-                }
-               
-
-                    
-
-                   
-                
-
-                
+                }            
+                  
             } if(json.status === "error") {
                 console.log(json.message);
                 
