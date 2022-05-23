@@ -1,3 +1,5 @@
+import '../sass/app.scss';
+
 document.querySelector("#login-btn").addEventListener("click", e => {
 
     console.log("❤");
@@ -17,6 +19,8 @@ document.querySelector("#login-btn").addEventListener("click", e => {
         return response.json();
     }).then(json => {
         if(json.status === "success") {
+            let token = json.token;
+            localStorage.setItem("token", token);
             //console.log("👍👌👌");
             window.location.href = "index.html";
         } if(json.status === "error") {

@@ -7,12 +7,16 @@
     margin-bottom: 30px;
 }
 
+.header__logo--eye {
+    width: 10%;
+    height: 10%;
+}
+
 @media (min-width: 50em) {
     .header {
         background-color: white;
         margin-left: 200px;
         margin-right: 200px;
-        
     }
 
     .header__logo {

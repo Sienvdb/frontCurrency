@@ -1,0 +1,48 @@
+@use "../colors";
+
+    .transfer {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px #CECECE;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .transfer__title {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .title__firstword {
+        color: colors.$primary;
+        padding-right: 5px;
+        padding-left: 20px;
+    }
+
+    .title__sent {
+        padding-right: 5px;
+    }
+
+    .title__number {
+        color: colors.$highlight;
+        padding-right: 5px;
+    }
+
+    .transfer__message {
+        color: colors.$message;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .transfer__date {
+        color: colors.$message;
+        font-size: 12px;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .date__date {
+        padding-right: 5px;
+    }

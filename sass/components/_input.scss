@@ -27,11 +27,16 @@
         margin-bottom: 10px;
         margin-top: 5px;
         width: 90%;
+        color: colors.$primary;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
     }
 
     .form__input--register {
         color: colors.$primary;
         background-color: colors.$input;
+        font-family: fonts.$poppins-medium;
+        font-size: 15px;
     }
 
     .input__field__error {
@@ -55,13 +60,6 @@
         color: black;
         font-family: fonts.$poppins-medium;
         font-size: 15px;
-    }
-
-    #password {
-        background-image: url("../../assets/oog.svg");
-        background-repeat: no-repeat;
-        background-position: 96%;
-        background-size: 30px;
     }
 
     @media (min-width: 50em) {
