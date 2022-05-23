@@ -9,7 +9,7 @@ document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
     let tokenUser;
     let tokenId;
 
-    fetch('http://localhost:3001/api/v1/token', {
+    fetch('https://currency-backend-mms.herokuapp.com/api/v1/token', {
         method: "get",
         headers: {
             'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
     tokenUser = data.data.username;
     tokenId = data.data.uid;
 
-    fetch('http://localhost:3001/api/v1/transfers', {
+    fetch('https://currency-backend-mms.herokuapp.com/api/v1/transfers', {
         method: "post",
         headers: {
             'Content-Type': 'application/json',
