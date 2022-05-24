@@ -52,3 +52,19 @@
     .date__date {
         padding-right: 5px;
     }
+
+    @media (min-width: 50em) {
+        #tranfer__list{
+            padding: 20px 0px;
+            background-color: white;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .transfer {
+            margin-left: 200px;
+            margin-right: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+    }

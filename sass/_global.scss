@@ -101,12 +101,32 @@
         body {
             background-color: colors.$primary;
         }
+        
+        .index-body{
+            background-color: white;
+        }
 
         .header__secondary {
             background-color: white;
             margin-left: 50px;
             margin-right: 50px;
             justify-content: center;
+            align-items: center;
+        }
+
+        .links {
+            background-color: white;
+            margin-left: 200px;
+            margin-right: 200px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header__index {
+            background-color: white;
+            margin-left: 200px;
+            margin-right: 200px;
+            justify-content: space-around;
             align-items: center;
         }
 
