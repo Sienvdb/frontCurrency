@@ -30,7 +30,7 @@ export default class Transfer {
         }).then(json => {
             if(json.status === "success") {
                 //console.log(json.data.transfer);
-                let transfer = json.data.transfer;
+                let transfer = json.data.transfer.reverse();
                 
                 for(let i = 0; i < transfer.length; i++) {
                     
