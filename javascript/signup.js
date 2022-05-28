@@ -1,3 +1,5 @@
+import '../sass/app.scss';
+
 document.querySelector("#register-btn").addEventListener("click", e => {
     //console.log("❤");
     let firstname = document.querySelector("#firstname").value;

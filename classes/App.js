@@ -10,27 +10,32 @@ export default class App {
 
     getCoins() {
         
-        //console.log(coins);
+        //console.log(localStorage.getItem('token'));
+        if(!localStorage.getItem('token')) {
+            window.location.href = "login.html";
+        } else {
+            fetch('https://currency-backend-mms.herokuapp.com/api/v1/getCoins', {
+                method: "get",
+                headers: {
+                    'Content-Type': 'application/json',
+                    "Authorization": "Bearer " + localStorage.getItem('token')
+                }
+            }).then(response => {
+                return response.json();
+            }).then(json => {
+                if(json.status === "success") {
+                    //console.log("👍👌👌");
+                    document.querySelector("#user-coins").innerHTML = json.data.coins;
+    
+                    
+                } if(json.status === "error") {
+                    console.log(json.message);
+                    
+                }
+            })
+        }
 
-        fetch('https://currency-backend-mms.herokuapp.com/api/v1/getCoins', {
-            method: "get",
-            headers: {
-                'Content-Type': 'application/json',
-                "Authorization": "Bearer " + localStorage.getItem('token')
-            }
-        }).then(response => {
-            return response.json();
-        }).then(json => {
-            if(json.status === "success") {
-                //console.log("👍👌👌");
-                document.querySelector("#user-coins").innerHTML = json.data.coins;
-
-                
-            } if(json.status === "error") {
-                console.log(json.message);
-                
-            }
-        })
+        
     }
 
     logout(e) {
