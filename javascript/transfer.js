@@ -39,17 +39,6 @@ if(!localStorage.getItem('token')) {
             return response.json()})
         .then(data => {
             receiverId = data.data.id;
-            fetch('https://currency-backend-mms.herokuapp.com/api/v1/token', {
-                method: "get",
-                headers: {
-                    'Content-Type': 'application/json',
-                    "Authorization": "Bearer " + localStorage.getItem('token')
-                }
-            })
-            .then(response => {
-                return response.json()})
-            .then(data => {
-                receiverId = data.data.id;
                 fetch('https://currency-backend-mms.herokuapp.com/api/v1/token', {
                     method: "get",
                     headers: {
