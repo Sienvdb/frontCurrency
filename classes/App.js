@@ -11,9 +11,9 @@ export default class App {
     getCoins() {
         
         //console.log(localStorage.getItem('token'));
-        if(!localStorage.getItem('token')) {
+        /*if(!localStorage.getItem('token')) {
             window.location.href = "login.html";
-        } else {
+        } else { */
             fetch('https://currency-backend-mms.herokuapp.com/api/v1/getCoins', {
                 method: "get",
                 headers: {
@@ -36,7 +36,7 @@ export default class App {
         }
 
         
-    }
+    //}
 
     logout(e) {
         /*console.log("✨");
