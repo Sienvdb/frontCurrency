@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency app</title>
 </head>
-<body>
+<body class="index-body">
     <div class="header">
         <div class="header__secondary header__secondary--index">
-            <img src="./assets/back.png" alt="IMD-currency logo" class="header__logo--transfer">
+            <a href="index.html">
+                <img src="./assets/back.png" alt="IMD-currency logo" class="header__logo--transfer">
+            </a>
             <h2 class="header__title">Leaderboard</h2>
         </div>
     </div>
+
+    <div class="links">
+        <a href="leaderboard.html" class="links__icon">
+          <img src="./assets/leaderboard-icon.svg" alt="Leaderboard icon">
+        </a>
+
+        <a href="transfer.html" class="links__icon">
+          <img src="./assets/transfer-icon.svg" alt="Transfer icon">
+        </a> 
+
+        <a href="#" class="links__icon" id="logout">
+          <img src="./assets/logout-icon.svg" alt="Logout icon" id="logout">
+        </a>   
+    </div>
+
+    <div class="header">
+        <div class="header__secondary">
+            <h2 class="header__firstword">Top 5</h2>
+            <h2 class="header__secondword">greatest leaders!</h2>
+        </div>
+    </div>
+
+    <ul id="leaderboard__list">
+    </ul>
     
     <script type="module" src="/main.js"></script>
 </body>
