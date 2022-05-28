@@ -19,7 +19,7 @@ export default class Transfer {
         tokenUser = data.data.username;
         //console.log(tokenUser);
 
-        fetch('https://currency-backend-mms.herokuapp.com/api/v1/transfers', {
+        fetch('https://currency-backend-mms.herokuapp.com/api/v1/transfers/paginate?page=1&size=4', {
             method: "get",
             headers: {
                 'Content-Type': 'application/json',
@@ -28,9 +28,8 @@ export default class Transfer {
         }).then(response => {
             return response.json();
         }).then(json => {
-            if(json.status === "success") {
-                //console.log(json.data.transfer);
-                let transfer = json.data.transfer.reverse();
+            if(json.status === "success" && json.page === "1" && json.size === "4") {
+                let transfer = json.data.reverse();
                 
                 for(let i = 0; i < transfer.length; i++) {
                     
