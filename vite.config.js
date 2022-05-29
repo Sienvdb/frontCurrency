@@ -15,7 +15,7 @@ module.exports = defineConfig({
         leaderboard: resolve(__dirname, 'leaderboard.html'),
         loginjs: resolve(__dirname, 'javascript/login.js'),
         signupjs: resolve(__dirname, 'javascript/signup.js'),
-        transferjs: resolve(__dirname, 'javascript/transfer.js')
+        transferjs: resolve(__dirname, 'javascript/transfers.js')
       }
     }
   }
