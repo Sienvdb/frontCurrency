@@ -13,7 +13,8 @@ module.exports = defineConfig({
         transactions: resolve(__dirname, 'transactions.html'),
         leaderboard: resolve(__dirname, 'leaderboard.html'),
         loginjs: resolve(__dirname, 'javascript/login.js'),
-        signupjs: resolve(__dirname, 'javascript/signup.js')
+        signupjs: resolve(__dirname, 'javascript/signup.js'),
+        transferjs: resolve(__dirname, 'javascript/transfer.js')
       }
     }
   }
