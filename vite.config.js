@@ -7,11 +7,7 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        login: resolve(__dirname, 'login.html'),
-        singup: resolve(__dirname, 'signup.html'),
-        transfer: resolve(__dirname, 'transfer.html'),
-        transaction: resolve(__dirname, 'transaction.html'),
-        leaderboard: resolve(__dirname, 'leaderboard.html')
+        nested: resolve(__dirname, 'login.html')
       }
     }
   }
