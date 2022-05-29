@@ -10,7 +10,8 @@ module.exports = defineConfig({
         nested: resolve(__dirname, 'login.html'),
         signup: resolve(__dirname, 'signup.html'),
         transfer: resolve(__dirname, 'transfer.html'),
-        transactions: resolve(__dirname, 'transactions.html')
+        transactions: resolve(__dirname, 'transactions.html'),
+        leaderboard: resolve(__dirname, 'leaderboard.html')
       }
     }
   }
