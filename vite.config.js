@@ -8,7 +8,8 @@ module.exports = defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         nested: resolve(__dirname, 'login.html'),
-        signup: resolve(__dirname, 'signup.html')
+        signup: resolve(__dirname, 'signup.html'),
+        transfer: resolve(__dirname, 'transfer.html')
       }
     }
   }
