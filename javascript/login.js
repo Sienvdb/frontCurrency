@@ -6,6 +6,7 @@ document.querySelector("#login-btn").addEventListener("click", e => {
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
 
+    
     fetch('https://currency-backend-mms.herokuapp.com/api/v1/login', {
         method: "post",
         headers: {
