@@ -5,6 +5,7 @@ if(!localStorage.getItem('token')) {
     document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
 
     //primus connection
+    /*
     const primus = Primus.connect("https://currency-backend-mms.herokuapp.com", {
         reconnect: {
             max: Infinity
@@ -16,6 +17,7 @@ if(!localStorage.getItem('token')) {
     primus.on("data", data =>{
         console.log("okaayyyyy");
       }); 
+    */
 
     console.log("❤");
     let receiver = document.querySelector("#username").value;
