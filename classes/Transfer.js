@@ -4,10 +4,10 @@ export default class Transfer {
     }
 
     getTransfers() {
-        /*
+        
         if(!localStorage.getItem('token')) {
             window.location.href = "login.html";
-        } else { */
+        } else { 
             let tokenUser;
             fetch('https://currency-backend-mms.herokuapp.com/api/v1/token', {
             method: "get",
@@ -81,4 +81,4 @@ export default class Transfer {
         }
         }
         
-//}
+}
