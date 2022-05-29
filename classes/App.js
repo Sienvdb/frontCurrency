@@ -9,7 +9,6 @@ export default class App {
     }
 
     getCoins() {
-        
         //console.log(localStorage.getItem('token'));
         if(!localStorage.getItem('token')) {
             window.location.href = "login.html";
