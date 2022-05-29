@@ -4,6 +4,21 @@ if(!localStorage.getItem('token')) {
 } else { 
     document.querySelector("#makeTransfer-btn").addEventListener("click", e => {
 
+    //primus connection
+    /*
+    const primus = Primus.connect("https://currency-backend-mms.herokuapp.com", {
+        reconnect: {
+            max: Infinity
+            , min: 500
+            , retries: 10
+        }
+    });
+
+    primus.on("data", data =>{
+        console.log("okaayyyyy");
+      }); 
+    */
+
     console.log("❤");
     let receiver = document.querySelector("#username").value;
     let amount = document.querySelector("#amount").value;

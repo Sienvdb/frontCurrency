@@ -10,7 +10,9 @@
   "dependencies": {
     "sass": "^1.51.0",
     "sockets": "^0.4.2",
-    "vite": "^2.9.9",
     "ws": "^8.7.0"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
   }
 }
