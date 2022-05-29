@@ -32,7 +32,7 @@ if(!localStorage.getItem('token')) {
                         'Content-Type': 'application/json',
                         "Authorization": "Bearer " + localStorage.getItem('token')
                     }
-                })
+                }) 
               .then(response => {
                  return response.json()})
               .then(data => {
