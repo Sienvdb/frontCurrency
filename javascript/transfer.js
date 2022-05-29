@@ -15,7 +15,7 @@ if(!localStorage.getItem('token')) {
 
     primus.on("data", data =>{
         console.log("okaayyyyy");
-      });
+      }); 
 
     console.log("❤");
     let receiver = document.querySelector("#username").value;
